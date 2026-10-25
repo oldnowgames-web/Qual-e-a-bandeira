@@ -1,0 +1,21 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><title>Qual é a bandeira?</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body><div class="app">
+<div id="start" class="screen on center"><div class="strip" id="strip"></div><h1>Qual é a bandeira?</h1><p>Descubra a bandeira de cada lugar do mundo.</p><button class="go" id="play">Jogar</button><div><button class="lnk" id="cfgbtn">⚙ Configurações</button></div></div>
+<div id="modes" class="screen center"><h1>Como quer jogar?</h1><p>Escolha um modo</p>
+<div class="modes"><button class="mode" id="mp"><div class="ic">🏳️</div><div><b>Acertar o país</b><span>Veja a bandeira e descubra de qual país ela é</span></div></button>
+<button class="mode" id="mc"><div class="ic">🌍</div><div><b>Acertar o continente</b><span>Veja a bandeira e o país e descubra o continente</span></div></button>
+<button class="mode" id="mf"><div class="ic">🚩</div><div><b>Acertar a bandeira</b><span>Veja o nome do país e escolha a bandeira certa</span></div></button>
+<button class="mode" id="ms"><div class="ic">❤️</div><div><b>Sobrevivência</b><span>7 vidas, perguntas variadas e cada vez mais difíceis</span></div></button></div>
+<button class="lnk" id="bk1">Voltar</button></div>
+<div id="qty" class="screen center"><h1>Quantas bandeiras?</h1><p>Começa pelas bandeiras fáceis e famosas e vai ficando mais difícil</p><div class="qgrid"><button class="qb wide" data-n="10"><b>Normal</b><span>10 bandeiras</span></button><button class="qb" data-n="25"><b>25</b></button><button class="qb" data-n="50"><b>50</b></button><button class="qb" data-n="75"><b>75</b></button><button class="qb wide" data-n="all"><b>Todos</b><span>todas as bandeiras</span></button></div><button class="lnk" id="bk3">Voltar</button></div>
+<div id="cfg" class="screen center"><h1>Configurações</h1><p class="slab">Estilo das bandeiras</p><div class="seg"><button data-s="f">Plano</button><button data-s="s" class="on">Sombreado</button></div><p class="slab">Sons</p><div class="seg" id="seg2"><button data-v="1" class="on">Ligados</button><button data-v="0">Desligados</button></div><div><button class="go" id="cfgok">Voltar</button></div></div>
+<div id="play-area" class="screen"><div class="top"><div class="ib"><button class="ibn" id="pbtn" aria-label="Pausar">⏸</button><button class="ibn" id="gbtn" aria-label="Configurações">⚙</button></div><span id="rd"></span><span class="pts" id="sc"></span></div><div class="bar"><i id="pg"></i></div>
+<div class="game"><div class="flag" id="fc"><div class="fw"><div class="fimg flat" id="fl" role="img" aria-label="Bandeira"></div></div><div id="cap"></div><div class="fx" id="fx"></div></div><div class="opts" id="op"></div></div></div>
+<div id="end" class="screen center"><div class="big" id="ee"></div><h1 id="et"></h1><p id="es"></p><div class="rec" id="rc"></div><div class="mrow"><button class="go" id="again">Jogar de novo</button><button class="go alt" id="menu">Menu</button></div></div>
+<div id="pz"><div class="center"><h1>Pausado</h1><p>O jogo está parado</p><div class="modes"><button class="go" id="pr">Voltar ao jogo</button><button class="go alt" id="pc">Configurações</button><button class="go alt" id="pm2">Voltar ao menu</button></div></div></div>
+</div><script src="data.js"></script>
+<script src="script.js"></script>
+</body></html>
